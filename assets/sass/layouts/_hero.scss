@@ -1,0 +1,21 @@
+.bg-hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90vh;
+    width: 50vw;
+    z-index: 5;
+    background: linear-gradient(rgba($blue, 0.8), rgba($blue, 0.8)),
+        url('../img/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    display: block;
+    border-bottom-left-radius: 100%;
+
+    @include media(lg) {
+        width: 52vw;
+    }
+    @include media(md) {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+.footer {
+    padding: 4rem 0;
+    background-color: $blue;
+    color: $white;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__copy {
+        font-size: 1.7rem;
+        margin-top: 2rem;
+    }
+
+    &__icon {
+        width: 3rem;
+    }
+}

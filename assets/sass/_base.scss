@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    @media only screen and (min-width: 1920px) {
+        font-size: 68.75%;
+    }
+    @media only screen and (min-width: 2560px) {
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #293347;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-blue;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 8rem 0 0 0;
+}

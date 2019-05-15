@@ -1,0 +1,27 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Use this as a simple structure for a simple start to a simple site.",
+    "main": "index.js",
+    "scripts": {
+        "serve": "live-server dist",
+        "start": "parcel index.html",
+        "build": "parcel build index.html --no-source-maps"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aravindballa/DevTips-Starter-Kit.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aravindballa/DevTips-Starter-Kit/issues"
+    },
+    "homepage": "https://github.com/aravindballa/DevTips-Starter-Kit#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.5.1",
+        "live-server": "^1.2.1",
+        "node-sass": "*",
+        "parcel-bundler": "*"
+    }
+}

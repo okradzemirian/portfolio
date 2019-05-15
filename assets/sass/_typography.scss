@@ -1,0 +1,19 @@
+.heading-secondary {
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 400;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 3rem;
+        height: 3px;
+        background-color: $dark;
+        margin: 0 auto;
+    }
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    text-align: center;
+}

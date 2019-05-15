@@ -1,0 +1,14 @@
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    @include media(lg) {
+        flex-direction: column;
+        justify-content: center;
+
+        & .skill {
+            margin-bottom: 4rem;
+        }
+    }
+}

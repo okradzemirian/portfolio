@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Mirian Okradze | A Full-Stack Web Developer</title>
+        <link rel="stylesheet" href="/assets/sass/main.scss" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__content">
+                <h1 class="header__logo">M<span>&nbsp;</span></h1>
+                <nav class="nav">
+                    <span id="toggle-icon">☰</span>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link"
+                                >Skills</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#projects"
+                                class="nav__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#contact"
+                                class="nav__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="bg-hero"></div>
+        <div class="main-bg" id="home">
+            <div class="container">
+                <div class="main">
+                    <div class="main__info">
+                        <h1 class="main__heading--primary">
+                            Mirian Okradze
+                        </h1>
+                        <p class="main__heading--secondary">
+                            A Full-Stack Web Developer
+                        </p>
+                        <a
+                            href="#skills"
+                            class="btn btn--primary"
+                            >View More</a
+                        >
+                    </div>
+                    <a href="#skills" class="main__arrow">
+                        <img
+                            src="/assets/img/down-arrow.svg"
+                            alt="Down arrow"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-skills" id="skills">
+            <h2 class="heading-secondary">Skills</h2>
+            <div class="container">
+                <div class="skills">
+                    <div class="skill">
+                        <img
+                            src="/assets/img/front-end.svg"
+                            alt="Front-end development"
+                            class="skill__icon"
+                        />
+                        <h3 class="skill__heading">
+                            Front-End Development
+                        </h3>
+                        <ul class="tech">
+                            <li class="tech__item">HTML</li>
+                            <li class="tech__item">CSS</li>
+                            <li class="tech__item">Sass</li>
+                            <li class="tech__item">React</li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <img
+                            src="/assets/img/back-end.svg"
+                            alt="Back-end development"
+                            class="skill__icon"
+                        />
+                        <h3 class="skill__heading">
+                            Back-End Development
+                        </h3>
+                        <ul class="tech">
+                            <li class="tech__item">NodeJS</li>
+                            <li class="tech__item">Express</li>
+                            <li class="tech__item">MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <img
+                            src="/assets/img/testing.svg"
+                            alt="Testing and debugging icon"
+                            class="skill__icon"
+                        />
+                        <h3 class="skill__heading">
+                            Testing & Debugging
+                        </h3>
+                        <ul class="tech">
+                            <li class="tech__item">Jest</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projects" id="projects">
+            <h2 class="heading-secondary">Recent Work</h2>
+            <p class="paragraph section-projects__paragraph">
+                Here are projects I've done. Wanna see more?
+                <a
+                    class="btn"
+                    href="mailto:okradzemirian@gmail.com"
+                    target="_blank"
+                    >Email Me</a
+                >
+            </p>
+            <div class="container">
+                <div class="projects">
+                    <figure class="project">
+                        <img
+                            class="project__img"
+                            src="/assets/img/hero.jpg"
+                            alt="Airbnb"
+                        />
+                        <figcaption class="project__fig">
+                            <p class="project__paragraph">
+                                Helping people to rent homes when
+                                tripping around the world.
+                            </p>
+                            <a
+                                href=""
+                                class="btn btn--primary"
+                                target="_blank"
+                                >Visit Website</a
+                            >
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact" id="contact">
+            <div class="contact">
+                <a
+                    href="mailto:okradzemirian@gmail.com"
+                    class="btn btn--primary"
+                    target="_blank"
+                >
+                    Email Me
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__media">
+                    <a
+                        href="https://github.com/oqradzemirian"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="footer__icon"
+                            src="assets/img/github.svg"
+                            alt="Github logo"
+                        />
+                    </a>
+                </div>
+                <div class="footer__copy">
+                    Designed and Developed by Mirian Okradze &copy;
+                    2019
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const nav = document.querySelector('.nav__list');
+            document
+                .getElementById('toggle-icon')
+                .addEventListener('click', () => {
+                    nav.classList.toggle('toggle-nav');
+                });
+            document.querySelectorAll('.nav__link').forEach(el => {
+                el.addEventListener('click', () => {
+                    nav.classList.toggle('toggle-nav');
+                });
+            });
+        </script>
+    </body>
+</html>

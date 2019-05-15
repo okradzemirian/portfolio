@@ -1,0 +1,19 @@
+.contact {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url('../img/contact-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20rem 0;
+    margin-top: 4rem;
+}
+
+.section-contact {
+    padding: 6rem 0 0 0;
+}
