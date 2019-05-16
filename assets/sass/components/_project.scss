@@ -19,15 +19,19 @@
     position: relative;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 
-    &:hover &__img {
+    &:hover &__img,
+    &:focus &__img {
         transform: scale(1.1);
     }
-    &:hover &__fig {
+    &:hover &__fig,
+    &:focus &__fig {
         opacity: 1;
     }
 
-    &:hover &__overlay {
+    &:hover &__overlay,
+    &:focus &__overlay {
         opacity: 1;
     }
 
