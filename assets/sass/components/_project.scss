@@ -1,19 +1,33 @@
-.project {
+.abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.project-wrapper {
     width: 50%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
+    padding: 1rem;
 
     @include media(md) {
         width: 100%;
     }
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
 
     &:hover &__img {
         transform: scale(1.1);
-        opacity: 0;
-        visibility: hidden;
     }
     &:hover &__fig {
+        opacity: 1;
+    }
+
+    &:hover &__overlay {
         opacity: 1;
     }
 
@@ -21,38 +35,33 @@
         display: block;
         width: 100%;
         z-index: 5;
-        transition: visibility 0.3s, opacity 0.3s ease-in-out,
-            transform 0.3s ease-in-out;
+        transition: visibility 0.25s, opacity 0.25s ease-in-out,
+            transform 0.25s ease-in-out;
     }
     &__fig {
-        background-color: $dark-blue;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        @extend .abs;
         opacity: 0;
-        -webkit-transition: opacity 0.3s ease-in-out;
-        -o-transition: opacity 0.3s ease-in-out;
-        transition: opacity 0.3s ease-in-out;
-        display: -webkit-box;
-        display: -ms-flexbox;
+        transition: opacity 0.25s ease-in-out;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
+        z-index: 10;
     }
+
+    &__overlay {
+        @extend .abs;
+        background-color: $dark-blue;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+        z-index: 8;
+    }
+
     &__paragraph {
         color: $white;
         font-size: 2rem;
         text-align: center;
-        margin-bottom: 2rem;
+        width: 90%;
+        margin: 0 auto 2rem auto;
     }
 }

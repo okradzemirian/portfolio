@@ -12,6 +12,7 @@
 .projects {
     display: flex;
     margin-top: 3rem;
+    flex-wrap: wrap;
 
     @include media(md) {
         flex-direction: column;

@@ -5,7 +5,7 @@
 }
 
 .nav {
-    z-index: 10;
+    z-index: 20;
 
     &__list {
         display: flex;
@@ -36,10 +36,13 @@
         font-size: 1.7rem;
         font-weight: 400;
         padding: 1rem 1.5rem;
+        transition: border-bottom 0.25s ease-in-out;
+        border-bottom: 2px solid transparent;
 
-        @include media(md) {
-            color: $dark;
+        &:hover {
+            border-bottom: 2px solid $blue;
         }
+
         @include media(sm) {
             display: flex;
             padding: 2rem 1.5rem;
