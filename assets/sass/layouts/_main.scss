@@ -3,9 +3,9 @@
 }
 
 .main {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 7rem);
     position: relative;
-    padding-top: 8rem;
+    padding-top: $nav-height;
     box-sizing: content-box;
     display: flex;
     align-items: center;

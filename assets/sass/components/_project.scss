@@ -1,71 +1,26 @@
-.abs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+.project {
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 33.33%;
+    margin: 1rem;
 
-.project-wrapper {
-    width: 50%;
-    padding: 1rem;
+    @include media(lg) {
+        width: 50%;
+    }
 
     @include media(md) {
         width: 100%;
     }
-}
 
-.project {
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    cursor: pointer;
-
-    &:hover &__img,
-    &:focus &__img {
-        transform: scale(1.1);
-    }
-    &:hover &__fig,
-    &:focus &__fig {
-        opacity: 1;
-    }
-
-    &:hover &__overlay,
-    &:focus &__overlay {
-        opacity: 1;
+    &:hover &__img {
+        transform: scale(1.15);
     }
 
     &__img {
         display: block;
+        border-radius: 5px;
         width: 100%;
-        z-index: 5;
-        transition: visibility 0.25s, opacity 0.25s ease-in-out,
-            transform 0.25s ease-in-out;
-    }
-    &__fig {
-        @extend .abs;
-        opacity: 0;
-        transition: opacity 0.25s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-    }
-
-    &__overlay {
-        @extend .abs;
-        background-color: $dark-blue;
-        opacity: 0;
-        transition: opacity 0.25s ease-in-out;
-        z-index: 8;
-    }
-
-    &__paragraph {
-        color: $white;
-        font-size: 2rem;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto 2rem auto;
+        transition: transform 0.25s ease-in-out;
     }
 }
